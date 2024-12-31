@@ -5002,6 +5002,13 @@ label {
     width: auto;
   }
 
+  .video.youtube {
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px;
+  }
+
   .section-hero {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -5913,6 +5920,10 @@ label {
     padding-right: 16px;
   }
 
+  .video.youtube {
+    width: 35em;
+  }
+
   .fd-700-22 {
     font-size: 20px;
     line-height: 26px;
@@ -6215,6 +6226,10 @@ label {
   .fd-800-32 {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .video.youtube {
+    width: 20em;
   }
 
   .fd-700-22 {
@@ -6706,7 +6721,7 @@ label {
   }
 
   .menu-element {
-    width: 298px;
+    width: 308px;
   }
 
   .box-button._50._100--on-mobile {
