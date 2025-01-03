@@ -6217,6 +6217,10 @@ label {
     padding: 15px 0;
   }
 
+  .section-main, .section-main.section {
+    height: 95vh;
+  }
+
   .hero-image-b {
     flex-flow: column;
     justify-content: flex-start;
@@ -6226,6 +6230,10 @@ label {
   .fd-800-32 {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .section-media.section {
+    height: 95vh;
   }
 
   .video.youtube {
@@ -6245,8 +6253,9 @@ label {
   }
 
   .section-hero {
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 95vh;
+    min-height: 95vh;
+    max-height: 95vh;
     padding-top: 70px;
     padding-bottom: 70px;
     overflow: auto;
@@ -6300,6 +6309,7 @@ label {
   }
 
   .section-grid {
+    height: 95vh;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -6326,6 +6336,7 @@ label {
   }
 
   .section-map {
+    height: 95vh;
     padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;
@@ -6361,6 +6372,7 @@ label {
   }
 
   .section-guide {
+    height: 95vh;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -6410,6 +6422,10 @@ label {
 
   .popup-image {
     background-color: #0000;
+  }
+
+  .section-card {
+    height: 95vh;
   }
 
   .cards {
@@ -6462,6 +6478,10 @@ label {
     background-image: url('../images/f-c-slide29-car-c4-mobile-hover-min.png');
   }
 
+  .section-board {
+    height: 95vh;
+  }
+
   .section-board.section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -6498,6 +6518,10 @@ label {
 
   .fd-600-24.dark-blue {
     font-weight: 700;
+  }
+
+  .section-timeline {
+    height: 95vh;
   }
 
   .timeline.gap-32 {
@@ -6553,6 +6577,10 @@ label {
     right: 16px;
   }
 
+  .section-accordion {
+    height: 95vh;
+  }
+
   .intro-content {
     padding-left: 10px;
     padding-right: 10px;
@@ -6570,6 +6598,10 @@ label {
 
   .image-left-top, .image-right-bottom {
     display: none;
+  }
+
+  .section-drop {
+    height: 95vh;
   }
 
   .section-drop.section {
@@ -6701,9 +6733,18 @@ label {
     overflow: visible;
   }
 
+  .section-slider {
+    height: 95vh;
+  }
+
   .section-slider.section {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .slider-wrapper {
+    max-height: 100%;
+    overflow: auto;
   }
 
   .slider {
@@ -6716,8 +6757,16 @@ label {
     padding-right: 20px;
   }
 
+  .section-resume {
+    height: 95vh;
+  }
+
   .list-item.align-top-on-small {
     flex-flow: column;
+  }
+
+  .sction-next {
+    height: 95vh;
   }
 
   .menu-element {
@@ -6726,6 +6775,10 @@ label {
 
   .box-button._50._100--on-mobile {
     width: 100%;
+  }
+
+  .section-task {
+    height: 95vh;
   }
 
   .full-image-wrapper {
@@ -6744,17 +6797,23 @@ label {
     padding-right: 10px;
   }
 
+  .large-image-and-text {
+    height: 95vh;
+  }
+
   .large-img-and-text-wrapper {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
   }
 
   .section-test {
+    height: 95vh;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .section-test.section {
+    flex-flow: column;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -6762,6 +6821,14 @@ label {
   .quiz-intro {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .q-test-1 {
+    flex: 1;
+    justify-content: center;
+    display: none;
   }
 
   .text-part {
@@ -6892,11 +6959,17 @@ label {
     margin-top: 0;
   }
 
+  .quiz-final {
+    flex: 1;
+    justify-content: center;
+  }
+
   .choice-wrapper {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     box-shadow: none;
     background-color: #0000;
+    flex: 1;
     max-width: 100%;
     padding: 0;
   }
@@ -7030,12 +7103,34 @@ label {
     left: 27px;
   }
 
-  .check-icon-btn2, .check-icon-btn3, .check-icon-btn4, .check-icon-btn5 {
+  .check-icon-btn2 {
+    left: 27px;
+  }
+
+  .situation-1-intro {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .check-icon-btn3, .check-icon-btn4 {
+    left: 27px;
+  }
+
+  .situation-2-intro, .situation-3-intro {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .check-icon-btn5 {
     left: 27px;
   }
 
   .incorrect-option-1, .incorrect-option-2, .incorrect-option-3, .incorrect-option-4, .correct-option-1, .correct-option-2, .correct-option-3, .correct-option-4 {
     left: 19px;
+  }
+
+  .f-t-feedback {
+    justify-content: center;
   }
 
   .header-tablet {
@@ -7064,6 +7159,11 @@ label {
     padding-right: 16px;
   }
 
+  .section-manual.section {
+    height: 95vh;
+    padding-bottom: 86px;
+  }
+
   .nav-text-with-bg {
     padding: 16px;
   }
@@ -7074,11 +7174,13 @@ label {
   }
 
   .nav-small-screen-wrapper {
+    padding-bottom: 0;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .section-label {
+    height: 95vh;
     padding-top: 60px;
     padding-bottom: 60px;
   }
