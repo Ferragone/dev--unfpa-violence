@@ -7184,6 +7184,11 @@ label {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .quiz-final-mod1 {
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 #w-node-_87a2849d-2f41-c9ad-4373-af037d5ed888-d58cc8f9, #w-node-d3e7bc0b-5621-b1c8-521b-b8f61de45f20-d58cc8f9 {
