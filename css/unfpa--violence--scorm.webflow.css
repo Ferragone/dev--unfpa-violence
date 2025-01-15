@@ -103,6 +103,7 @@ label {
   width: 56px;
   height: 56px;
   padding: 0;
+  display: block;
   position: relative;
 }
 
@@ -717,6 +718,8 @@ label {
 }
 
 .card-grid-box.scroll {
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
   height: 75vh;
   overflow: auto;
 }
@@ -4670,6 +4673,16 @@ label {
   display: flex;
 }
 
+.progress-bar {
+  z-index: 1100;
+  background-color: var(--dark-blue);
+  border: 0 solid #000;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  height: 7px;
+  position: fixed;
+}
+
 @media screen and (min-width: 1280px) {
   .navbar_component_block {
     margin-bottom: 0;
@@ -4926,7 +4939,7 @@ label {
   }
 
   .intro-body {
-    max-width: 100%;
+    max-width: 962px;
   }
 
   .image-inside-grid {
@@ -6155,6 +6168,10 @@ label {
     min-width: 100%;
     max-width: 100%;
     overflow: visible;
+  }
+
+  .progress-bar {
+    height: 7px;
   }
 }
 
@@ -7489,6 +7506,10 @@ label {
     grid-auto-columns: 1fr;
     align-self: auto;
     display: grid;
+  }
+
+  .progress-bar {
+    height: 5px;
   }
 }
 
