@@ -131,11 +131,15 @@ label {
 }
 
 .hero-section-wrapper {
-  grid-column-gap: 46px;
-  grid-row-gap: 46px;
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
   flex-flow: column;
   align-items: center;
   display: flex;
+}
+
+.hero-section-wrapper.scroller {
+  overflow: hidden;
 }
 
 .body {
@@ -159,6 +163,15 @@ label {
   max-width: 1100px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.hero-text.gap {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: stretch;
+  display: flex;
 }
 
 .fd-800-32 {
@@ -1354,6 +1367,7 @@ label {
   border-radius: 8px;
   justify-content: center;
   align-items: center;
+  height: auto;
   padding: 0;
   display: flex;
   position: static;
@@ -4683,6 +4697,51 @@ label {
   position: fixed;
 }
 
+.logo-wrapper {
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  flex-flow: column;
+  display: flex;
+}
+
+.logo-wrap {
+  grid-column-gap: 34px;
+  grid-row-gap: 34px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo-item.v1 {
+  width: 112px;
+  height: 43px;
+}
+
+.logo-item.v2 {
+  width: 76.8px;
+  height: 76.8px;
+}
+
+.logo-item.v3 {
+  width: 180px;
+  height: 60px;
+}
+
+.logo-item.v4 {
+  width: 144px;
+  height: 40px;
+}
+
+.logo-item.v5 {
+  width: 204px;
+  height: 59.2px;
+}
+
+.logo-item.v6 {
+  width: 89.6px;
+  height: 56px;
+}
+
 @media screen and (min-width: 1280px) {
   .navbar_component_block {
     margin-bottom: 0;
@@ -4695,8 +4754,8 @@ label {
   }
 
   .hero-section-wrapper {
-    grid-column-gap: 66px;
-    grid-row-gap: 66px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
   }
 
   .section-media.section {
@@ -4869,12 +4928,27 @@ label {
   .section-manual.section {
     height: 100vh;
   }
+
+  .logo-wrapper {
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .hero-section-wrapper {
-    grid-column-gap: 96px;
-    grid-row-gap: 96px;
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+  }
+
+  .hero-section-wrapper.scroller {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
+  .hero-text.gap {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
   }
 
   .video {
@@ -5042,11 +5116,21 @@ label {
     padding-left: 180px;
     padding-right: 180px;
   }
+
+  .logo-wrapper {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .navbar_component_block {
     z-index: 5;
+  }
+
+  .hero-section-wrapper.scroller {
+    grid-column-gap: 84px;
+    grid-row-gap: 84px;
   }
 
   .video-wrapper {
@@ -5181,6 +5265,11 @@ label {
     height: 100px;
     margin-top: 140px;
   }
+
+  .logo-wrapper {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -5189,9 +5278,22 @@ label {
     padding-right: 10px;
   }
 
+  .section-main.section {
+    margin-bottom: 140px;
+    overflow: visible;
+  }
+
   .hero-section-wrapper {
-    grid-column-gap: 64px;
-    grid-row-gap: 64px;
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
+    height: 120vh;
+    overflow: auto;
+  }
+
+  .hero-section-wrapper.scroller {
+    scrollbar-color: auto;
+    height: 100vh;
+    overflow: auto;
   }
 
   .body {
@@ -5209,6 +5311,10 @@ label {
 
   .hero-text {
     max-width: 100%;
+  }
+
+  .hero-text.gap {
+    overflow: visible;
   }
 
   .section-media {
@@ -6000,6 +6106,7 @@ label {
     width: auto;
     min-width: auto;
     max-width: 100%;
+    height: auto;
     max-height: 600px;
     display: block;
   }
@@ -6172,6 +6279,21 @@ label {
 
   .progress-bar {
     height: 7px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .s {
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
+    scrollbar-color: auto;
+    flex-flow: column;
+    display: flex;
+    overflow: auto;
   }
 }
 
@@ -6517,6 +6639,11 @@ label {
 
   .section-main, .section-main.section {
     height: 95vh;
+  }
+
+  .hero-section-wrapper.scroller {
+    height: 90vh;
+    overflow: auto;
   }
 
   .hero-image-b {
@@ -7510,6 +7637,36 @@ label {
 
   .progress-bar {
     height: 5px;
+  }
+
+  .logo-item.v1 {
+    width: 82px;
+    height: 36.2px;
+  }
+
+  .logo-item.v2 {
+    width: 68.2px;
+    height: 68.2px;
+  }
+
+  .logo-item.v3 {
+    width: 101.6px;
+    height: auto;
+  }
+
+  .logo-item.v4 {
+    width: 84px;
+    height: auto;
+  }
+
+  .logo-item.v5 {
+    width: 108px;
+    height: auto;
+  }
+
+  .logo-item.v6 {
+    width: 43px;
+    height: auto;
   }
 }
 
