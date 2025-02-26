@@ -773,7 +773,7 @@ label {
   display: none;
 }
 
-.button {
+.next-button-course {
   background-color: var(--dark-blue);
   text-align: center;
   border-radius: 8px;
@@ -785,7 +785,7 @@ label {
   line-height: 26px;
 }
 
-.button:hover {
+.next-button-course:hover {
   background-color: var(--purple);
 }
 
@@ -912,7 +912,6 @@ label {
 
 .card-front {
   background-color: var(--white);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: var(--dark-blue);
   border-radius: 8px;
@@ -1055,7 +1054,6 @@ label {
 
 .card-back {
   background-color: var(--white);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: var(--dark-blue);
   transform-style: preserve-3d;
@@ -5195,7 +5193,7 @@ label {
     flex: none;
   }
 
-  .button {
+  .next-button-course {
     flex: 0 auto;
   }
 
